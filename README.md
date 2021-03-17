@@ -1,13 +1,17 @@
 # Motion Supervised co-part Segmentation 
-## [Arxiv](http://arxiv.org/abs/2004.03234) | [YouTube video](https://www.youtube.com/watch?v=RJ4Nj1wV5iA)
+## [Arxiv](http://arxiv.org/abs/2004.03234) | [YouTube video](https://www.youtube.com/watch?v=RJ4Nj1wV5iA) | [Demo](https://docs.google.com/presentation/d/1LnRi_ghHnZ_lB7j8_M_ER0N-SOGFN0HDTbMytfeRlIg/edit?usp=sharing)
 
 Install:
+
     mtcnn
+    
     pixellib
 
-Download (weights)[https://drive.google.com/drive/folders/1Zo8Y8xRpHZpzD7Yhj9dy-a9fp6PNEZlI?usp=sharing]
+Download [weights](https://drive.google.com/drive/folders/1Zo8Y8xRpHZpzD7Yhj9dy-a9fp6PNEZlI?usp=sharing)
+    
     
 Run:
+
     ```
     python test_2.py --invid test_1.mp4 --img 1.jpg --outvid out.mp4
     ```
