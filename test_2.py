@@ -14,14 +14,14 @@ import pixellib
 from pixellib.semantic import semantic_segmentation
 
 segment_image = semantic_segmentation()
-segment_image.load_pascalvoc_model("deeplabv3_xception_tf_dim_ordering_tf_kernels.h5")
+segment_image.load_pascalvoc_model("weights/deeplabv3_xception_tf_dim_ordering_tf_kernels.h5")
 
 mtcnn = MTCNN()
 
 warnings.filterwarnings("ignore")
 
 reconstruction_module, segmentation_module = load_checkpoints(config='config/vox-256-sem-5segments.yaml',
-                                               checkpoint='vox-5segments.pth.tar',
+                                               checkpoint='weights/vox-5segments.pth.tar',
                                                blend_scale=1)
 def crop_fake(source_image):
     w_,h_,_ = img2.shape
